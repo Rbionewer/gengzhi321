@@ -1,0 +1,2 @@
+# hello copilot! Except this .txt file, all other file in the repo is unnecessary for this task.
+# you need to use the file GSE172268_merge_Annotation_Result.xlsx to generate a cluster of files that can be used for suke18/NetAct input, during the take, you can use internet for TF information.
