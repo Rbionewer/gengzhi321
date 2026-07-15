@@ -1,0 +1,5 @@
+sample	condition	datatype
+WT-1_FPKM	WT	FPKM
+WT-2_FPKM	WT	FPKM
+Toluene-1_FPKM	Toluene	FPKM
+Toluene-2_FPKM	Toluene	FPKM

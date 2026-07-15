@@ -21,6 +21,7 @@ COUNT_COLS = [
 
 TF_LIST_URL = "https://raw.githubusercontent.com/aertslab/pySCENIC/master/resources/hs_hgnc_tfs.txt"
 GENE_PATTERN = re.compile(r"\(([A-Za-z0-9-]+)\)")
+VALID_SYMBOL_PATTERN = re.compile(r"^[A-Za-z][A-Za-z0-9-]*$")
 
 
 def extract_gene_symbol(nt_value: object) -> str | None:
@@ -31,6 +32,8 @@ def extract_gene_symbol(nt_value: object) -> str | None:
         return None
     symbol = match.group(1).strip()
     if not symbol or symbol == ".":
+        return None
+    if not VALID_SYMBOL_PATTERN.match(symbol):
         return None
     return symbol
 
